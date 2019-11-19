@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
        /* toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*/
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+  /*      getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             return mFragmentList.size();
         }
 
-        public void addFragment(Fragment fragment, String title) {
+        public void addFragment(Fragment fragment , String title) {
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
         }

@@ -11,4 +11,17 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent1">#c8e8ff</color>
 
+    <color name="background_dark">#7045b0</color>
+    <color name="background_light">#8c4dbf</color>
+    <color name="background">#C52CE2</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="abhi">#35075f</color>
+
+
+
+
+
+
 </resources>

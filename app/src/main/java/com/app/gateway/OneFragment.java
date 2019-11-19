@@ -14,9 +14,9 @@ import android.view.ViewGroup;
 
 public class OneFragment extends Fragment {
 
-  /*  public OneFragment() {
+    public OneFragment() {
         // Required empty public constructor
-    }*/
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

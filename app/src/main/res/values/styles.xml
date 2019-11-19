@@ -21,7 +21,7 @@
         <item name="android:windowFullscreen">false</item>
         <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#7045b0</item>
         <item name="colorAccent">@color/colorAccent</item>
 
     </style>
@@ -33,9 +33,30 @@
     <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#7045b0</item>
+        <item name="colorPrimaryDark">#7045b0</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#5C72E7</item>
+        <item name="colorPrimaryDark">#5C72E7</item>
+        <item name="colorAccent">#5C72E7</item>
+
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#35075f</item>
+        <item name="colorPrimaryDark">#35075f</item>
+        <item name="colorAccent">#FFFFFF</item>
+
     </style>
 
 </resources>
