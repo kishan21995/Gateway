@@ -7,7 +7,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private ImageView _settingIMG , _helpIMG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +30,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        /* toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);*/
-
-  /*      getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
+        _settingIMG=findViewById(R.id.settingIMG);
+        _helpIMG=findViewById(R.id.helpIMG);
+
+
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        _settingIMG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(MainActivity.this,SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        _helpIMG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(MainActivity.this,HelpActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

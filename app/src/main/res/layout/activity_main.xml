@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:background="@color/abhi"
+            android:background="@color/darkpurple"
             android:layout_width="match_parent"
             android:layout_height="60dp">
 
@@ -40,15 +40,17 @@
                 android:layout_height="wrap_content"/>
 
             <ImageView
+                android:id="@+id/helpIMG"
                 android:src="@drawable/ic_help_outline_black_24dp"
-                android:layout_marginLeft="190dp"
+                android:layout_marginLeft="170dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <ImageView
+                android:id="@+id/settingIMG"
                 android:src="@drawable/settingspng"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_gravity="center"
                 android:layout_width="20dp"
                 android:layout_height="20dp"/>

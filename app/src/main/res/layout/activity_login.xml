@@ -30,11 +30,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:src="@drawable/logo"
+        android:src="@drawable/iconsimple"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
+        android:layout_width="140dp"
+        android:layout_height="140dp"/>
 
     <EditText
         android:id="@+id/emailET"
@@ -50,7 +50,7 @@
         android:layout_marginLeft="20dp"
         android:drawablePadding="10dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
 

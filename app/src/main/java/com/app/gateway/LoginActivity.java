@@ -8,12 +8,14 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class LoginActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private Button _logBTN;
+    private TextView _forgatePWD;
     private EditText _emailET,_pwdET;
 
 
@@ -27,6 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         _logBTN=findViewById(R.id.logBTN);
         _emailET=findViewById(R.id.emailET);
         _pwdET=findViewById(R.id.pwdET);
+        _forgatePWD=findViewById(R.id.forgatePWD);
+
 
         /*     _logBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +39,14 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });*/
+
+        _forgatePWD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,ForgatePasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
         _logBTN.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,14 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard"
     tools:context=".OneFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="true">
+
+                <LinearLayout
+                    android:id="@+id/LinearCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/ImgCustomer"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/localservices"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Local Services"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearMiller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImgMiller"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/notice"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtMiller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" Notice Board "
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LnearOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImgOwner"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/recidency"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtOwner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" Residents "
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LinearDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImgDriver"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/emergancy"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" Emergency No.s "
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearCustomer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/ImgCustomer1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/localservices"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCustomer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Local Services"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearMiller1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/ImgMiller1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/notice"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtMiller1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text=" Notice Board "
+                        android:textAllCaps="true"
+                        android:textColor="@color/lightpurple" />
+                </LinearLayout>
+
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
