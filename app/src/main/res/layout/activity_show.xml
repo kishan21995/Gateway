@@ -6,11 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/splashbg"
-    tools:context=".ShowActivity">
+    tools:context=".activities.ShowActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_marginTop="450dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="#df0623"
+            app:pageColor="#fff"
+            app:snap="false" />
+
     
 
-<RelativeLayout
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -34,9 +56,6 @@
         android:layout_height="60dp"/>
 
 </LinearLayout>
-
-</RelativeLayout>
-
     <Button
         android:id="@+id/logBTN"
         android:text="LOGIN"
@@ -47,15 +66,13 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-   <!-- <ImageView
+    <!-- <ImageView
         android:src="@drawable/login_button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>-->
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
@@ -83,6 +100,8 @@
 
     </LinearLayout>
 
+</LinearLayout>
 
+    </RelativeLayout>
 
 </LinearLayout>

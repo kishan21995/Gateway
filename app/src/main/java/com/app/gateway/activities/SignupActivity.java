@@ -1,4 +1,4 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.app.gateway.R;
 
 public class SignupActivity extends AppCompatActivity {
     private TextView _signupTXT;
@@ -34,7 +36,7 @@ public class SignupActivity extends AppCompatActivity {
         _signupTXT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SignupActivity.this,LoginActivity.class);
+                Intent intent=new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

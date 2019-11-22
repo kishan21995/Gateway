@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.gateway">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,36 +10,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".activities.AddFlatVillaActivity"
+            android:theme="@style/AppTheme3"></activity>
         <activity
-            android:name=".ShowActivity"
+            android:name=".activities.HelpActivity"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".EditProfileActivity"
-            android:theme="@style/AppTheme3"
-            android:screenOrientation="portrait" />
+            android:name=".activities.ShowActivity"
+            android:theme="@style/AppTheme3" />
         <activity
-            android:name=".SettingActivity"
-            android:theme="@style/AppTheme3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ForgatePasswordActivity"
+            android:name=".activities.EditProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".activities.SettingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.ForgatePasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.SignupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme2">
             <intent-filter>

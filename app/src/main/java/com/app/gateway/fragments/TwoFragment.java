@@ -1,4 +1,4 @@
-package com.app.gateway;
+package com.app.gateway.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.app.gateway.R;
 
 
+public class TwoFragment extends Fragment {
 
-public class ThreeFragment extends Fragment {
-
-    public ThreeFragment() {
+    public TwoFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class ThreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_three, container, false);
+        return inflater.inflate(R.layout.fragment_two, container, false);
     }
 
 }

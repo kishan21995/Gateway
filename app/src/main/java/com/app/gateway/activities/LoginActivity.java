@@ -1,16 +1,17 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
+
+import com.app.gateway.R;
 
 public class LoginActivity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -43,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         _forgatePWD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(LoginActivity.this,ForgatePasswordActivity.class);
+                Intent intent=new Intent(LoginActivity.this, ForgatePasswordActivity.class);
                 startActivity(intent);
             }
         });

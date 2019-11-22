@@ -1,4 +1,4 @@
-package com.app.gateway;
+package com.app.gateway.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.app.gateway.R;
 
 
 public class OneFragment extends Fragment {

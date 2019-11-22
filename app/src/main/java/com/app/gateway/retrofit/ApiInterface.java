@@ -1,0 +1,45 @@
+package com.app.gateway.retrofit;
+
+
+import retrofit2.Call;
+import retrofit2.http.Body;
+import retrofit2.http.Headers;
+import retrofit2.http.POST;
+
+public interface ApiInterface {
+
+/*
+    @Headers({
+            "Accept: application/vnd.yourapi.v1.full+json",
+            "User-Agent: Your-App-Name"
+    })
+*/
+
+
+
+/*    @POST("new_login")
+    Call<ResponseLogin> loginUser(@Body LoginRequest loginRequest);
+    @POST("api/account/Authenticate")
+    Call<LoginResponse> login(@Body LoginRequestModel requestModel);
+    @POST("add_user")
+    Call<AddUserResponse> addUser(@Body AddUserRequest addUserRequest);
+    @POST("add_bank")
+    Call<BankDetailResponse> bankDetailSave(@Body BankDetailRequest bankDetailRequest);
+    @POST("update")
+    Call<UpdateUserResponse> updateUser(@Body UpdateUserDetail updateUserDetail);
+    @POST("api/account/register")
+    @Headers({"Content-Type: application/json", "Accept: application/json"})
+    Call<ResponseBody> addUser(@Header("Authorization") String access_token, @Body AddUser addUser);
+    @POST("list")
+    Call<UserListResponse> userList(@Body UserListRequest userListRequest);
+    @POST("referleft")
+    Call<RightData> userListNew(@Body UserListRequest userListRequest);
+    @POST("referright")
+    Call<RightData> userListRight(@Body UserListRequest userListRequest);
+    @POST("referleft")
+    Call<LeftDownLine> userListLeft(@Body UserListRequest userListRequest);*/
+
+
+
+
+}

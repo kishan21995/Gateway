@@ -1,8 +1,10 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.app.gateway.R;
 
 public class HelpActivity extends AppCompatActivity {
 

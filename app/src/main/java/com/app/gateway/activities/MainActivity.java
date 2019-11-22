@@ -1,4 +1,4 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -12,6 +12,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.app.gateway.fragments.OneFragment;
+import com.app.gateway.R;
+import com.app.gateway.fragments.ThreeFragment;
+import com.app.gateway.fragments.TwoFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity.this,SettingActivity.class);
+                Intent intent=new Intent(MainActivity.this, SettingActivity.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity.this,HelpActivity.class);
+                Intent intent=new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(intent);
             }
         });

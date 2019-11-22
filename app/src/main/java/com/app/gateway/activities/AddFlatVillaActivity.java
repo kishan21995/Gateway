@@ -1,14 +1,16 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ForgatePasswordActivity extends AppCompatActivity {
+import com.app.gateway.R;
+
+public class AddFlatVillaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forgate_password);
+        setContentView(R.layout.activity_add_flat_villa);
     }
 }

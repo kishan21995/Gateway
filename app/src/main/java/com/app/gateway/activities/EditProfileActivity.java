@@ -1,4 +1,4 @@
-package com.app.gateway;
+package com.app.gateway.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.app.gateway.R;
 
 public class EditProfileActivity extends AppCompatActivity {
     private ImageView _backIMG;
@@ -26,20 +28,15 @@ public class EditProfileActivity extends AppCompatActivity {
         _emailET=findViewById(R.id.emailET);
         _saveBTN=findViewById(R.id.saveBTN);
 
-
-
-
-
         _backIMG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(EditProfileActivity.this,MainActivity.class);
+                Intent intent=new Intent(EditProfileActivity.this, MainActivity.class);
                 startActivity(intent);
 
             }
         });
-
         _saveBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,28 +46,18 @@ public class EditProfileActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
-
-
     public void Validation() {
         boolean check = true;
         String name = _nameET.getText().toString().trim();
         String phone = _phoneET.getText().toString().trim();
         String email = _emailET.getText().toString().trim();
 
-
-
-
         if (name.isEmpty()) {
             _nameET.setError("Field can't be empty");
             check = false;
 
         }
-
-
 
         if (phone.isEmpty()) {
             _phoneET.setError("Field can't be empty");
@@ -88,7 +75,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Profile Update Successfully", Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(EditProfileActivity.this, EditProfileActivity.class);
+            Intent intent = new Intent(EditProfileActivity.this, SettingActivity.class);
             startActivity(intent);
 
         }
