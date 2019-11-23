@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/splashbg"
+    android:background="@drawable/dashboard"
     tools:context=".activities.SettingActivity">
 
     <LinearLayout
@@ -13,44 +13,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:background="@color/darkpurple"
-        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/darkpurple"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/backIMG"
-            android:background="@drawable/ic_keyboard_backspace_black_24dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/backIMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_keyboard_backspace_black_24dp" />
 
-        <TextView
-            android:text="Settings"
-            android:textSize="20dp"
-            android:layout_marginLeft="15dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
+        <LinearLayout
         android:id="@+id/editLT"
         android:orientation="horizontal"
         android:layout_marginTop="40dp"
-        android:background="@drawable/buttonshape2"
+        android:background="@drawable/buttonshape3"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
         <ImageView
-            android:src="@drawable/header_profile"
+            android:src="@drawable/usericon"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_width="50dp"
@@ -72,7 +72,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -80,7 +80,7 @@
                     android:id="@+id/editIMG"
                     android:src="@drawable/ic_edit_black_24dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="130dp"
                     android:layout_width="20dp"
                     android:layout_height="20dp"/>
 
@@ -90,7 +90,7 @@
                 android:text=" gkishan832@gmail.com  "
                 android:textSize="14dp"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -99,7 +99,7 @@
                 android:text=" 6396745689  "
                 android:textSize="14dp"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -114,52 +114,62 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="40dp"
-        android:background="@drawable/buttonshape2"
+        android:background="@drawable/buttonshape3"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-        <ImageView
-            android:src="@drawable/header_profile"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-
-
-
-                <TextView
-                    android:text="App Notification Settings  "
-                    android:textSize="16dp"
+                <ImageView
+                    android:id="@+id/homeICON5"
+                    android:src="@drawable/notification"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:textColor="@color/white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:text="App Application Setting "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON5"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <ImageView
                     android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
                     android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
                     android:layout_marginLeft="50dp"
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
 
 
-
-
+            </RelativeLayout>
 
 
 
         </LinearLayout>
 
+
+    </LinearLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginTop="40dp"
-        android:background="@drawable/buttonshape2"
+        android:background="@drawable/buttonshape3"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
@@ -171,31 +181,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
         <ImageView
-            android:src="@drawable/header_profile"
+            android:id="@+id/homeICON"
+            android:src="@drawable/iconhome"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
 
         <TextView
-            android:text="App Notification Settings  "
+            android:text="Tower 1001 "
             android:textSize="16dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textColor="@color/white"
+            android:layout_toRightOf="@id/homeICON"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <ImageView
             android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
             android:layout_gravity="center"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="50dp"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
 
 
+
+            </RelativeLayout>
+
+
+
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -203,31 +232,94 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON1"
+                    android:src="@drawable/iconhome"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Tower 1002 "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON1"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/homeICON2"
+                    android:src="@drawable/iconhome"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:text="Tower 1003 "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON2"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
 
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -235,31 +327,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON3"
+                    android:src="@drawable/iconhome"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Tower 1004 "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON3"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
+            </RelativeLayout>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -267,62 +373,79 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON4"
+                    android:src="@drawable/iconhome"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Tower 1005 "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON4"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
+            </RelativeLayout>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
+
+
 
         <LinearLayout
             android:id="@+id/addflatVillaLT"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:src="@drawable/header_profile"
+                android:src="@drawable/addvilla"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
 
             <TextView
                 android:text="Add Flat/Villa/Workplace   "
                 android:textSize="16dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <ImageView
+          <!--  <ImageView
                 android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="50dp"
                 android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                android:layout_height="30dp"/>-->
 
 
         </LinearLayout>
@@ -333,7 +456,7 @@
         android:orientation="vertical"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/buttonshape2"
+        android:background="@drawable/buttonshape3"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
@@ -345,31 +468,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON6"
+                    android:src="@drawable/chate"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Support and Feedback"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON6"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+
+
+            </RelativeLayout>
+
 
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#B4B8B8"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -377,95 +519,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON7"
+                    android:src="@drawable/userd"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Tell a friend about Gatway "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON7"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+
+
+            </RelativeLayout>
+
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
-
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
-
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
-
-
-        </LinearLayout>
+            android:background="#B4B8B8"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -474,31 +571,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@drawable/header_profile"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:text="App Notification Settings  "
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/homeICON8"
+                    android:src="@drawable/logoutone"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
-            <ImageView
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
+                <TextView
+                    android:text="Logout "
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@id/homeICON8"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+
+
+            </RelativeLayout>
+
 
 
         </LinearLayout>
+
+
 
     </LinearLayout>
 
@@ -507,7 +617,7 @@
             android:text=" Terms and Conditon | Privacy Policy "
             android:textSize="14dp"
             android:layout_gravity="center"
-            android:textColor="@color/lightpurple"
+            android:textColor="@color/darkpurple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
@@ -515,7 +625,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="14dp"
             android:layout_gravity="center"
-            android:textColor="@color/lightpurple"
+            android:textColor="@color/darkpurple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

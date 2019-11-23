@@ -10,7 +10,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 import com.app.gateway.fragments.OneFragment;
 import com.app.gateway.R;
@@ -22,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+   private Spinner spinner;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -42,10 +45,24 @@ public class MainActivity extends AppCompatActivity {
 
         _settingIMG=findViewById(R.id.settingIMG);
         _helpIMG=findViewById(R.id.helpIMG);
+        spinner=findViewById(R.id.spinner);
 
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        List<String>list=new ArrayList<String>();
+        list.add("Add Flat/Villa");
+        list.add("Tower 1001");
+        list.add("Tower 1002");
+        list.add("Tower 1003");
+        list.add("Tower 1004");
+        list.add("Tower 1005");
+        list.add("Add Flat/Villa");
+
+
+
+
 
         _settingIMG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +79,29 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent=new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(intent);
+            }
+        });
+
+
+
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,list);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(arrayAdapter);
+
+        //jo hum item select kre vo spinner pe dikh jaye//
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+
+            //ek jo show krana h//
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                spinner.setSelection(i);
+
+            }
+
+            @Override
+            //ek jo show nhi h//
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
 

@@ -26,9 +26,9 @@ public class ShowActivity extends AppCompatActivity {
     private static int NUM_PAGES = 0;
     private ArrayList<ImageModel> imageModelArrayList;
 
-    private int[] myImageList = new int[]{R.drawable.splashbg, R.drawable.dashboard,
-            R.drawable.splashbg,R.drawable.dashboard
-            ,R.drawable.splashbg,R.drawable.dashboard};
+    private int[] myImageList = new int[]{
+            R.drawable.splashbg,R.drawable.four
+            ,R.drawable.three};
 
 
     private Button _logBTN;
@@ -75,7 +75,7 @@ public class ShowActivity extends AppCompatActivity {
 
         ArrayList<ImageModel> list = new ArrayList<>();
 
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < 3; i++){
             ImageModel imageModel = new ImageModel();
             imageModel.setImage_drawable(myImageList[i]);
             list.add(imageModel);

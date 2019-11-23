@@ -16,6 +16,8 @@
     <color name="background">#C52CE2</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
 
     <color name="darkpurple">#35075f</color>
     <color name="lightpurple">#C52CE2</color>
