@@ -50,7 +50,7 @@
         android:layout_height="100dp">
 
         <ImageView
-            android:src="@drawable/usericon"
+            android:src="@drawable/usercircal"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_width="50dp"
