@@ -49,6 +49,9 @@ dependencies {
 
     implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
 
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+
 
     testImplementation 'junit:junit:4.12'
 

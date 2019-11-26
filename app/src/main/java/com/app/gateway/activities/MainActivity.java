@@ -15,10 +15,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
-import com.app.gateway.fragments.OneFragment;
+import com.app.gateway.fragments.CommunityFragment;
 import com.app.gateway.R;
-import com.app.gateway.fragments.ThreeFragment;
-import com.app.gateway.fragments.TwoFragment;
+import com.app.gateway.fragments.ActivityFragment;
+import com.app.gateway.fragments.HouseholdFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new OneFragment(), "Community");
-        adapter.addFragment(new TwoFragment(), "Household");
-        adapter.addFragment(new ThreeFragment(), "Activity");
+        adapter.addFragment(new CommunityFragment(), "Community");
+        adapter.addFragment(new HouseholdFragment(), "Household");
+        adapter.addFragment(new ActivityFragment(), "Activity");
         viewPager.setAdapter(adapter);
     }
 

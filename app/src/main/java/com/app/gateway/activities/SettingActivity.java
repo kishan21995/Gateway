@@ -25,6 +25,8 @@ public class SettingActivity extends AppCompatActivity {
         _backIMG=findViewById(R.id.backIMG);
 
         _linearLayoutEdit=findViewById(R.id.editLT);
+
+
         _addFlatVillaLT=findViewById(R.id.addflatVillaLT);
 
 

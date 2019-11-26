@@ -117,7 +117,7 @@ public class ShowActivity extends AppCompatActivity {
             public void run() {
                 handler.post(Update);
             }
-        }, 3000, 3000);
+        }, 4000, 4000);
 
         // Pager listener over indicator
         indicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
