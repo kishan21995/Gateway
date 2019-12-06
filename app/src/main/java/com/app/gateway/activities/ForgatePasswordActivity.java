@@ -24,6 +24,7 @@ public class ForgatePasswordActivity extends AppCompatActivity {
         _emailET=findViewById(R.id.emailET);
         _sendBTN=findViewById(R.id.sendBTN);
 
+
         _sendBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,25 +32,15 @@ public class ForgatePasswordActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
     }
 
     public void Validation() {
         boolean check = true;
         String email = _emailET.getText().toString().trim();
 
-
-
-
         if (email.isEmpty()) {
             _emailET.setError("Field can't be empty");
             check = false;
-
         }
 
         if (check == true) {
@@ -60,8 +51,5 @@ public class ForgatePasswordActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
-
-
     }
-
 }

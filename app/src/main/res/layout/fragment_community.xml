@@ -35,12 +35,12 @@
                     android:paddingBottom="8dp">
 
                     <ImageView
-                        android:id="@+id/ImgCustomer"
+                        android:id="@+id/localServices_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/localservices"
+                        android:src="@drawable/localservices1"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -53,7 +53,7 @@
                         android:paddingRight="15dp"
                         android:text="Local Services"
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,12 +69,12 @@
 
 
                     <ImageView
-                        android:id="@+id/ImgMiller"
+                        android:id="@+id/noticeBoard_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/notice"
+                        android:src="@drawable/notice1"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                         android:paddingRight="15dp"
                         android:text=" Notice Board "
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -102,12 +102,12 @@
 
 
                     <ImageView
-                        android:id="@+id/ImgOwner"
+                        android:id="@+id/residents_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/recidency"
+                        android:src="@drawable/recidency1"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -120,7 +120,7 @@
                         android:paddingRight="15dp"
                         android:text=" Residents "
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
 
@@ -136,12 +136,12 @@
 
 
                     <ImageView
-                        android:id="@+id/ImgDriver"
+                        android:id="@+id/emergencyNo_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/emergancy"
+                        android:src="@drawable/emergancy1"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -154,7 +154,7 @@
                         android:paddingRight="15dp"
                         android:text=" Emergency No.s "
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -168,12 +168,12 @@
                     android:paddingBottom="8dp">
 
                     <ImageView
-                        android:id="@+id/ImgCustomer1"
+                        android:id="@+id/notifyGate_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/localservices"
+                        android:src="@drawable/notics"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -184,9 +184,9 @@
                         android:layout_gravity="center"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:text="Local Services"
+                        android:text="Notify Gate"
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -202,12 +202,12 @@
 
 
                     <ImageView
-                        android:id="@+id/ImgMiller1"
+                        android:id="@+id/quickAction_IMG"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
                         android:layout_gravity="center"
                         android:padding="5dp"
-                        android:src="@drawable/notice"
+                        android:src="@drawable/setting"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
@@ -218,9 +218,9 @@
                         android:layout_gravity="center"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:text=" Notice Board "
+                        android:text=" Quick Action "
                         android:textAllCaps="true"
-                        android:textColor="@color/lightpurple" />
+                        android:textColor="@color/circlepurple" />
                 </LinearLayout>
 
 

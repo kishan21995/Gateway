@@ -11,7 +11,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:background="@color/darkpurple"
+        android:background="@color/circlepurple"
         android:layout_height="60dp">
 
         <ImageView
@@ -82,7 +82,7 @@
         android:inputType="number"
         android:textColor="@color/white"
         android:maxLength="30"
-        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawableLeft="@drawable/ic_local_phone_white"
         android:background="@drawable/buttonshape1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

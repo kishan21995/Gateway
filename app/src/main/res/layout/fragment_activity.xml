@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".fragments.ActivityFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -37,7 +42,7 @@
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/profile_img"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/swiggeycircular" />
@@ -169,6 +174,214 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/uber" />
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:text="Geeta  "
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:background="@drawable/buttonshape7"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp">
+
+
+                                <TextView
+                                    android:text="LEFT"
+                                    android:textSize="10dp"
+
+                                    android:textColor="@color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:src="@drawable/signout"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                            <TextView
+                                android:text=" 03:04 PM  "
+                                android:textSize="14dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/darkpurple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:src="@drawable/ic_brightness_1_black_24dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"/>
+
+                            <TextView
+                                android:text=" MAID "
+                                android:textSize="14dp"
+                                android:textColor="@color/darkpurple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#B4B8B8"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_local_phone_black_24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_star_border_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                <TextView
+                    android:text=" Rate Now "
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_assignment_turned_in_black_24dp"
+                        android:layout_width="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text=" Attendance "
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonshape3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -187,7 +400,7 @@
 
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/uber" />
@@ -263,7 +476,7 @@
                                 android:layout_height="5dp"/>
 
                             <TextView
-                                android:text=" SWIGGY "
+                                android:text=" UBER"
                                 android:textSize="14dp"
                                 android:textColor="@color/darkpurple"
                                 android:layout_width="wrap_content"
@@ -295,7 +508,7 @@
                     android:layout_height="20dp"/>
 
                 <TextView
-                    android:text=" Disabled by you "
+                    android:text=" Enabled by you "
                     android:textSize="16dp"
                     android:layout_marginLeft="20dp"
                     android:textColor="@color/black"
@@ -308,5 +521,650 @@
         </LinearLayout>
     </LinearLayout>
 
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonshape3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
 
-</LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/uber" />
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:text="Geeta  "
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:background="@drawable/buttonshape7"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp">
+
+
+                                <TextView
+                                    android:text="LEFT"
+                                    android:textSize="10dp"
+
+                                    android:textColor="@color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:src="@drawable/signout"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                            <TextView
+                                android:text=" 03:04 PM  "
+                                android:textSize="14dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/darkpurple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:src="@drawable/ic_brightness_1_black_24dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"/>
+
+                            <TextView
+                                android:text=" MAID "
+                                android:textSize="14dp"
+                                android:textColor="@color/darkpurple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=" Entered 2 times  "
+                    android:textColor="@color/darkpurple"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#B4B8B8"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_local_phone_black_24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_star_border_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text=" Rate Now "
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_assignment_turned_in_black_24dp"
+                        android:layout_width="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text=" Attendance "
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonshape3"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/swiggeycircular" />
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="Acc "
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    />
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/buttonshape5"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="80dp"
+                                    android:layout_height="20dp">
+
+
+                                    <TextView
+                                        android:text="DISABLED"
+                                        android:textSize="10dp"
+
+                                        android:textColor="@color/white"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text=" 03:04 PM  "
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/darkpurple"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/user"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text=" Disabled by you "
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:background="#B4B8B8"/>
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text=" Call "
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonshape3"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/driver" />
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="Delivery  "
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/buttonshape7"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp">
+
+
+                                    <TextView
+                                        android:text="LEFT"
+                                        android:textSize="10dp"
+
+                                        android:textColor="@color/white"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:src="@drawable/signout"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                                <TextView
+                                    android:text=" 03:04 PM  "
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/darkpurple"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text=" Amit Hello "
+                        android:textColor="@color/darkpurple"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_brightness_1_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Clothes "
+                        android:textColor="@color/darkpurple"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/user"
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"/>
+
+                    <TextView
+                        android:text=" Allowed by guard VINOD KUMAR "
+                        android:textSize="14dp"
+
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#B4B8B8"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="match_parent"
+                        android:background="#B4B8B8"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_block_black_24dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                        <TextView
+                            android:text=" Wrong entry "
+                            android:textSize="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

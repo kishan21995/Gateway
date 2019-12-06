@@ -57,5 +57,8 @@ public class HFCPrefs {
     public static long getLong(Context context, String str) {
         getInstance(context);
         return sharedPreferences.getLong(str, 0);
+
+
+
     }
 }

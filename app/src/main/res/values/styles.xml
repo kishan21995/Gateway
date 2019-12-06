@@ -53,8 +53,8 @@
 
         <item name="android:windowFullscreen">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">#35075f</item>
-        <item name="colorPrimaryDark">#35075f</item>
+        <item name="colorPrimary">#5627a1</item>
+        <item name="colorPrimaryDark">#5627a1</item>
         <item name="colorAccent">#FFFFFF</item>
 
     </style>

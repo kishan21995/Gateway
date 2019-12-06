@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         _forgatePWD=findViewById(R.id.forgatePWD);
 
 
-        /*     _logBTN.setOnClickListener(new View.OnClickListener() {
+     /*        _logBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(LoginActivity.this,MainActivity.class);

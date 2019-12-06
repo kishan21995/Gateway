@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/darkpurple"
+            android:background="@color/circlepurple"
             android:orientation="horizontal">
 
             <ImageView
@@ -49,12 +49,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
-        <ImageView
-            android:src="@drawable/usercircal"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/usercircal" />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -565,6 +565,7 @@
             android:background="#B4B8B8"/>
 
         <LinearLayout
+            android:id="@+id/linearlogout_signout"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"

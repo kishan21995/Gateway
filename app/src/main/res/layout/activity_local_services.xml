@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard"
+
+    tools:context=".activities.LocalServicesActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/circlepurple"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/backIMG"
+                android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:text="Local Services"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/backIMG"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/searchIMG"
+                android:background="@drawable/ic_searc"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/all_LLT"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/maidLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+        <TextView
+            android:id="@+id/maid_TV"
+            android:text="Maid"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="57"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@id/rightArrow_IMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driverLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV1"
+                android:text="Driver"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="5"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG1"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cookLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV2"
+                android:text="Cook"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="3"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG2"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/milkmanLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV3"
+                android:text="Milkman"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="6"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG3"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_width="30dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paperboyLLt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV4"
+                android:text="Paper boy"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="1"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG4"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carCleanerLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV5"
+                android:text="Car Cleaner"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="6"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG5"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/electricianLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV6"
+                android:text="Electrician"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="10"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG6"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laundryLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV7"
+                android:text="Laundry"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="1"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG7"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG7"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stafLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV8"
+                android:text="Staff"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="4"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG8"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG8"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gardenerLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV10"
+                android:text="Gardener"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="2"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG10"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG10"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vegetableLLT"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/maid_TV9"
+                android:text="Vegetable Vendor"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="9"
+                android:padding="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:layout_toLeftOf="@id/rightArrow_IMG9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/rightArrow_IMG9"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+            <View
+                android:layout_below="@id/rightArrow_IMG9"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/interiorLLT"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+
+                    <TextView
+                        android:id="@+id/maid_TV11"
+                        android:text="Interior Work"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:padding="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="9"
+                        android:padding="20dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+
+                        android:layout_toLeftOf="@id/rightArrow_IMG11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/rightArrow_IMG11"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+                    <View
+                        android:layout_below="@id/rightArrow_IMG11"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/login"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scrapDealerLLT"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+
+                    <TextView
+                        android:id="@+id/maid_TV12"
+                        android:text="Scrap Dealer"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:padding="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="9"
+                        android:padding="20dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+
+                        android:layout_toLeftOf="@id/rightArrow_IMG12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/rightArrow_IMG12"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+                    <View
+                        android:layout_below="@id/rightArrow_IMG12"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/login"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

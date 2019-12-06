@@ -7,7 +7,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
 public class AppUtils {
@@ -33,7 +32,7 @@ public class AppUtils {
         }
         try {
             pDialog = new ProgressDialog(context);
-            pDialog.setMessage("Please wait");
+            pDialog.setMessage("Please wait ");
             pDialog.setIndeterminate(true);
             pDialog.setCancelable(false);
             pDialog.setCanceledOnTouchOutside(false);
@@ -58,7 +57,7 @@ public class AppUtils {
      * @param context Application Context
      * @return true if connected with active internet else false
      */
-    public static boolean isInternetConnected(Context context) {
+    public boolean isInternetConnected(Context context) {
         try {
             if (context != null) {
                 ConnectivityManager connectivityManager =
@@ -72,6 +71,8 @@ public class AppUtils {
             e.printStackTrace();
         }
         return false;
+
+
     }
 
     public static void showMessage(Context context, String message) {

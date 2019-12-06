@@ -3,6 +3,7 @@
     package="com.app.gateway">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +11,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.AddFlatVillaActivity"
-            android:theme="@style/AppTheme3"></activity>
+        <activity android:name=".activities.ScrapDealerActivity"></activity>
+        <activity android:name=".activities.InteriorWorkActivity" />
+        <activity android:name=".activities.VegetableActivity" />
+        <activity android:name=".activities.GardenerActivity" />
+        <activity android:name=".activities.StaffActivity" />
+        <activity android:name=".activities.LaundryActivity" />
+        <activity android:name=".activities.ElectricianActivity" />
+        <activity android:name=".activities.CarCleanerActivity" />
+        <activity android:name=".activities.PaperboyActivity" />
+        <activity android:name=".activities.MilkmanActivity" />
+        <activity android:name=".activities.CookActivity" />
+        <activity android:name=".activities.DriverActivity" />
+        <activity android:name=".activities.MaidActivity" />
+        <activity
+            android:name=".activities.NotifyGateActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.QuickActionsActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.EmergencyNoActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.ResidentsActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.NoticeBoardActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.LocalServicesActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.AddFlatVillaActivity"
+            android:theme="@style/AppTheme3" />
         <activity
             android:name=".activities.HelpActivity"
             android:theme="@style/AppTheme3" />

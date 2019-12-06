@@ -31,19 +31,15 @@ public class EditProfileActivity extends AppCompatActivity {
         _backIMG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent=new Intent(EditProfileActivity.this, MainActivity.class);
                 startActivity(intent);
-
             }
         });
         _saveBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
-              Validation();
-
+                Validation();
             }
         });
     }
@@ -56,31 +52,23 @@ public class EditProfileActivity extends AppCompatActivity {
         if (name.isEmpty()) {
             _nameET.setError("Field can't be empty");
             check = false;
-
         }
 
         if (phone.isEmpty()) {
             _phoneET.setError("Field can't be empty");
             check = false;
-
         }
 
         if (email.isEmpty()) {
             _emailET.setError("Field can't be empty");
             check = false;
-
         }
+
 
         if (check == true) {
-
             Toast.makeText(this, "Profile Update Successfully", Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(EditProfileActivity.this, SettingActivity.class);
             startActivity(intent);
-
         }
-
-
     }
-
 }
