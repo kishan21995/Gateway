@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MaidProfile1Activity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/circlepurple"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/backIMG"
+                android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:text="Profile Details"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/backIMG"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/circlepurple"></View>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/proIMG"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:elevation="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/img1" />
+
+
+        <TextView
+            android:text="Ravi Kumar"
+            android:textStyle="bold"
+            android:id="@+id/nameTV"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/proIMG"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="MAID"
+            android:id="@+id/maid1TV"
+
+            android:textColor="@color/black"
+            android:layout_below="@id/nameTV"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/horiView"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_below="@id/maid1TV"
+            android:layout_marginTop="20dp"
+            android:background="#B4B8B8"/>
+
+        <View
+            android:id="@+id/verView"
+            android:layout_width=".5dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/horiView"
+            android:layout_centerHorizontal="true"
+            android:background="#B4B8B8"/>
+
+        <ImageView
+            android:id="@+id/starIMG"
+            android:src="@drawable/ic_local_phone_black_24dp"
+            android:layout_toRightOf="@id/verView"
+            android:layout_below="@id/horiView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Call"
+            android:layout_toRightOf="@id/verView"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_below="@id/starIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/starIMG1"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/verView"
+            android:layout_below="@id/horiView"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="5.0"
+            android:layout_below="@id/horiView"
+            android:layout_toLeftOf="@id/verView"
+            android:textSize="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="1 Rating"
+            android:layout_toLeftOf="@id/verView"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/starIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:id="@+id/horiView1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height=".5dp"
+            android:layout_below="@id/verView"
+            android:background="#B4B8B8"/>
+
+        <TextView
+            android:id="@+id/reviewTV"
+            android:text="RATINGS REVIEWS"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/horiView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/starIMG2"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/reviTV3"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/reviTV3"
+            android:text="5.0"
+            android:textSize="16dp"
+            android:layout_toLeftOf="@id/verView"
+             android:layout_below="@id/reviewTV"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/starIMG3"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/starIMG2"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/starIMG4"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/starIMG3"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/starIMG5"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/starIMG4"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/starIMG6"
+            android:src="@drawable/ic_sta"
+            android:layout_toLeftOf="@id/starIMG5"
+            android:layout_below="@id/reviewTV"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:text="Show All"
+            android:textColor="@color/white"
+            android:layout_below="@id/horiView1"
+            android:background="@drawable/buttonshape4"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="30dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
