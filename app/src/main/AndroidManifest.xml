@@ -11,10 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MaidProfile2Activity" android:screenOrientation="portrait"
+        <activity android:name=".activities.ReviewActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3"></activity>
-        <activity android:name=".activities.MaidProfile1Activity" android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3"/>
+        <activity
+            android:name=".activities.MaidProfile2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.MaidProfile1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
         <activity
             android:name=".activities.MaidInsideActivity"
             android:screenOrientation="portrait"
