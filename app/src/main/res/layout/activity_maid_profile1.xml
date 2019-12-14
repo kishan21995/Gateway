@@ -112,13 +112,13 @@
 
         <ImageView
             android:id="@+id/starIMG"
-            android:src="@drawable/ic_local_phone_black_24dp"
-            android:layout_toRightOf="@id/verView"
-            android:layout_below="@id/horiView"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="80dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horiView"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/verView"
+            android:src="@drawable/ic_local_phone_black_24dp" />
 
         <TextView
             android:text="Call"
