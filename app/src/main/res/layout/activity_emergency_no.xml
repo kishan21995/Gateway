@@ -51,4 +51,120 @@
         </RelativeLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/profile1LLT"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_wth_shadow"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_above="@id/proTV"
+            android:background="#B4B8B8"/>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/proIMG"
+                android:layout_width="78dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/buildi" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/proTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomar gaurd  "
+                android:layout_toRightOf="@id/proIMG"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+
+            <ImageView
+                android:src="@drawable/ic_local_phone_black_24dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+
+
+
+
+            <!-- <ImageView
+                 android:id="@+id/starIMG"
+                 android:src="@drawable/ic_sta"
+                 android:layout_toRightOf="@id/proIMG"
+                 android:layout_below="@id/proTV"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"/>
+
+             <TextView
+                 android:id="@+id/rateTV"
+                 android:text=" 5.0  "
+                 android:textSize="16dp"
+                 android:layout_toRightOf="@id/starIMG"
+                 android:layout_below="@id/proTV"
+                 android:layout_marginTop="15dp"
+                 android:textColor="@color/black"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>-->
+
+            <TextView
+                android:text="9988998898 "
+                android:textSize="16dp"
+
+                android:layout_toRightOf="@id/proIMG"
+                android:layout_below="@id/proTV"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/circlepurple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

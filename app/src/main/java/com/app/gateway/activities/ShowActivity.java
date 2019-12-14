@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.app.gateway.models.ImageModel;
+import com.app.gateway.models.image.ImageModel;
 import com.app.gateway.R;
 import com.app.gateway.adapters.SlidingImage_Adapter;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -52,7 +52,6 @@ public class ShowActivity extends AppCompatActivity {
         _logBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent=new Intent(ShowActivity.this, LoginActivity.class);
                 startActivity(intent);
 

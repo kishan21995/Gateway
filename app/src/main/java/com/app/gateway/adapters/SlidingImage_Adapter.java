@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.app.gateway.R;
-import com.app.gateway.models.ImageModel;
+import com.app.gateway.models.image.ImageModel;
 
 import java.util.ArrayList;
 

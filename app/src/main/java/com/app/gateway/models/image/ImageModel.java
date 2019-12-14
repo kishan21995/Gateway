@@ -1,4 +1,4 @@
-package com.app.gateway.models;
+package com.app.gateway.models.image;
 
 public class ImageModel {
  

@@ -1,6 +1,12 @@
 package com.app.gateway.retrofit;
 
 
+
+import com.app.gateway.models.login.LoginRequest;
+import com.app.gateway.models.login.LoginResponse;
+import com.app.gateway.models.signup.SignupRequest;
+import com.app.gateway.models.signup.SignupResponse;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Headers;
@@ -8,36 +14,24 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
-/*
     @Headers({
             "Accept: application/vnd.yourapi.v1.full+json",
             "User-Agent: Your-App-Name"
     })
-*/
+
+    @POST("login")
+    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
+
+
+    @POST("http://api.barnco99.com/register")
+    Call<SignupResponse> signupUser1(@Body SignupRequest signUpRequest);
 
 
 
-/*    @POST("new_login")
-    Call<ResponseLogin> loginUser(@Body LoginRequest loginRequest);
-    @POST("api/account/Authenticate")
-    Call<LoginResponse> login(@Body LoginRequestModel requestModel);
-    @POST("add_user")
-    Call<AddUserResponse> addUser(@Body AddUserRequest addUserRequest);
-    @POST("add_bank")
-    Call<BankDetailResponse> bankDetailSave(@Body BankDetailRequest bankDetailRequest);
-    @POST("update")
-    Call<UpdateUserResponse> updateUser(@Body UpdateUserDetail updateUserDetail);
-    @POST("api/account/register")
-    @Headers({"Content-Type: application/json", "Accept: application/json"})
-    Call<ResponseBody> addUser(@Header("Authorization") String access_token, @Body AddUser addUser);
-    @POST("list")
-    Call<UserListResponse> userList(@Body UserListRequest userListRequest);
-    @POST("referleft")
-    Call<RightData> userListNew(@Body UserListRequest userListRequest);
-    @POST("referright")
-    Call<RightData> userListRight(@Body UserListRequest userListRequest);
-    @POST("referleft")
-    Call<LeftDownLine> userListLeft(@Body UserListRequest userListRequest);*/
+
+
+
+
 
 
 

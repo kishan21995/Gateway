@@ -27,7 +27,7 @@ public class Utils {
 
     private static ProgressDialog pDialog;
 
-    public static void showProgressDialog(Context context) {
+    public static void showProgressDialog(Context context, String s) {
         if (pDialog != null) {
             pDialog.dismiss();
         }

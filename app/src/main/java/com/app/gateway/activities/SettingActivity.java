@@ -105,7 +105,7 @@ public class SettingActivity extends AppCompatActivity {
 /*
                 HFMPrefs.putBoolean(SettingActivity.this, Constants.LOGIN_CHECK, false);
 */
-                startActivity(new Intent(SettingActivity.this, LoginActivity.class));
+                //startActivity(new Intent(SettingActivity.this, LoginActivity.class));
                 finish();
             }
         });

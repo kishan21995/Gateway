@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ResidentsC5">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/circlepurple"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/backIMG"
+                android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:text="Residents of C-5"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/backIMG"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/searchIMG"
+                android:background="@drawable/ic_searc"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/profile1LLT"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_wth_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <TextView
+                    android:text="FLAT 101 "
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <View
+                    android:id="@+id/horiView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/proIMG"
+                        android:layout_width="78dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img1" />
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/proTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ravi Kumar  "
+                        android:layout_toRightOf="@id/proIMG"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+
+
+
+
+                    <!-- <ImageView
+                         android:id="@+id/starIMG"
+                         android:src="@drawable/ic_sta"
+                         android:layout_toRightOf="@id/proIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"/>
+
+                     <TextView
+                         android:id="@+id/rateTV"
+                         android:text=" 5.0  "
+                         android:textSize="16dp"
+                         android:layout_toRightOf="@id/starIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:textColor="@color/black"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>-->
+
+                    <TextView
+                        android:text="OWNER "
+                        android:textSize="16dp"
+
+                        android:layout_toRightOf="@id/proIMG"
+                        android:layout_below="@id/proTV"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/circlepurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile1LLT1"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_wth_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <TextView
+                    android:text="FLAT 102 "
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <View
+                    android:id="@+id/horiView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/proIMG1"
+                        android:layout_width="78dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img2" />
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/proTV1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ravi Kumar  "
+                        android:layout_toRightOf="@id/proIMG1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+
+
+
+
+                    <!-- <ImageView
+                         android:id="@+id/starIMG"
+                         android:src="@drawable/ic_sta"
+                         android:layout_toRightOf="@id/proIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"/>
+
+                     <TextView
+                         android:id="@+id/rateTV"
+                         android:text=" 5.0  "
+                         android:textSize="16dp"
+                         android:layout_toRightOf="@id/starIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:textColor="@color/black"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>-->
+
+                    <TextView
+                        android:text="OWNER "
+                        android:textSize="16dp"
+
+                        android:layout_toRightOf="@id/proIMG1"
+                        android:layout_below="@id/proTV1"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/circlepurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile1LLT2"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_wth_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <TextView
+                    android:text="FLAT 103 "
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <View
+                    android:id="@+id/horiView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/proIMG2"
+                        android:layout_width="78dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img3" />
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/proTV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ravi Kumar  "
+                        android:layout_toRightOf="@id/proIMG2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+
+
+
+
+                    <!-- <ImageView
+                         android:id="@+id/starIMG"
+                         android:src="@drawable/ic_sta"
+                         android:layout_toRightOf="@id/proIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"/>
+
+                     <TextView
+                         android:id="@+id/rateTV"
+                         android:text=" 5.0  "
+                         android:textSize="16dp"
+                         android:layout_toRightOf="@id/starIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:textColor="@color/black"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>-->
+
+                    <TextView
+                        android:text="OWNER "
+                        android:textSize="16dp"
+
+                        android:layout_toRightOf="@id/proIMG2"
+                        android:layout_below="@id/proTV2"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/circlepurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile1LLT3"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_wth_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <TextView
+                    android:text="FLAT 104 "
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <View
+                    android:id="@+id/horiView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_above="@id/proTV"
+                    android:background="#B4B8B8"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/proIMG3"
+                        android:layout_width="78dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img1" />
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/proTV3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ravi Kumar  "
+                        android:layout_toRightOf="@id/proIMG3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+
+
+
+
+
+                    <!-- <ImageView
+                         android:id="@+id/starIMG"
+                         android:src="@drawable/ic_sta"
+                         android:layout_toRightOf="@id/proIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"/>
+
+                     <TextView
+                         android:id="@+id/rateTV"
+                         android:text=" 5.0  "
+                         android:textSize="16dp"
+                         android:layout_toRightOf="@id/starIMG"
+                         android:layout_below="@id/proTV"
+                         android:layout_marginTop="15dp"
+                         android:textColor="@color/black"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>-->
+
+                    <TextView
+                        android:text="OWNER "
+                        android:textSize="16dp"
+
+                        android:layout_toRightOf="@id/proIMG3"
+                        android:layout_below="@id/proTV3"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/circlepurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
