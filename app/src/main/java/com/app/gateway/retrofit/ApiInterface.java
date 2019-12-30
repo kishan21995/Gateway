@@ -2,13 +2,14 @@ package com.app.gateway.retrofit;
 
 
 
-import com.app.gateway.models.login.LoginRequest;
-import com.app.gateway.models.login.LoginResponse;
-import com.app.gateway.models.signup.SignupRequest;
-import com.app.gateway.models.signup.SignupResponse;
+import com.app.gateway.models.login.LoginRequests;
+import com.app.gateway.models.login.LoginResponses;
+import com.app.gateway.models.signup.RegistrationRequests;
+import com.app.gateway.models.signup.RegistrationResponses;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
@@ -19,12 +20,12 @@ public interface ApiInterface {
             "User-Agent: Your-App-Name"
     })
 
-    @POST("login")
-    Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
+    @GET("user/login")
+    Call<LoginResponses> loginUser(@Body LoginRequests loginRequests);
 
 
-    @POST("http://api.barnco99.com/register")
-    Call<SignupResponse> signupUser1(@Body SignupRequest signUpRequest);
+    @POST("user/users")
+    Call<RegistrationResponses> signupUser1(@Body RegistrationRequests registrationRequests);
 
 
 

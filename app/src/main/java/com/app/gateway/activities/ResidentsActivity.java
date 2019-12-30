@@ -43,7 +43,8 @@ public void init(){
     maidC4=findViewById(R.id.maidLLT13);
     maidC5=findViewById(R.id.maidLLT14);
 
-}
+
+                  }
 
 
 public void onClickListner(){
@@ -57,6 +58,8 @@ public void onClickListner(){
             startActivity(intent);
         }
     });
+
+        
 
 
         maidA1.setOnClickListener(new View.OnClickListener() {
@@ -176,9 +179,4 @@ public void onClickListner(){
 
     });
 
-
-
-
-
-
-}}
+    }}

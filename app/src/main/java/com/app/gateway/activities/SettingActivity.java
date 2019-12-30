@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.app.gateway.R;
@@ -20,6 +21,7 @@ public class SettingActivity extends AppCompatActivity {
 
     private ImageView _editIMG, _backIMG;
     private LinearLayout _linearLayoutEdit, _addFlatVillaLT,_linearlogout_signout;
+    private RelativeLayout rela_share,feed;
 
 
     @Override
@@ -31,6 +33,9 @@ public class SettingActivity extends AppCompatActivity {
         _backIMG=findViewById(R.id.backIMG);
 
         _linearLayoutEdit=findViewById(R.id.editLT);
+        rela_share=findViewById(R.id.rela_share);
+        feed=findViewById(R.id.feedback);
+
 
 
         _addFlatVillaLT=findViewById(R.id.addflatVillaLT);
@@ -77,6 +82,28 @@ public class SettingActivity extends AppCompatActivity {
 
             }
         });
+        rela_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent share = new Intent(Intent.ACTION_SEND);
+                share.setType("text/plain");
+                String text = " Gateway Application ,click below to download\nhttps://play.google.com/store/apps/details?id=com.app.ekomkarseriesfinalappdemo&hl=en";
+                share.putExtra(Intent.EXTRA_SUBJECT, "Gatway");
+                share.putExtra(Intent.EXTRA_TEXT, text);
+                startActivity(Intent.createChooser(share, "share via"));
+
+            }
+        });
+
+        feed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                userfeed();
+            }
+        });
+
 
     }
 
@@ -109,6 +136,40 @@ public class SettingActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        dialog.show();
+
+    }
+
+    private void userfeed() {
+
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        // ...Irrelevant code for customizing the buttons and titl
+        LayoutInflater inflater = this.getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.feedback, null);
+        dialogBuilder.setView(dialogView);
+
+        final AlertDialog dialog = dialogBuilder.create();
+      /*  Button btn_Cancel = dialogView.findViewById(R.id.btn_cancel);
+        TextView text_logout = dialogView.findViewById(R.id.text_logout);
+        btn_Cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+
+            }
+        });
+
+        text_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+*//*
+                HFMPrefs.putBoolean(SettingActivity.this, Constants.LOGIN_CHECK, false);
+*//*
+                //startActivity(new Intent(SettingActivity.this, LoginActivity.class));
+                finish();
+            }
+        });*/
 
         dialog.show();
 

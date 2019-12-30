@@ -27,6 +27,17 @@ public class ResidentsA3 extends AppCompatActivity {
                 Intent intent=new Intent(ResidentsA3.this,ResidentsActivity.class);
                 startActivity(intent);
 
+
+
+
+               /* Intent intent1=new Intent(ResidentsA3.this,MainActivity.class);
+                startActivity(intent);*/
+
+
+
+
+
+
             }
         });
 

@@ -25,4 +25,7 @@ public class Constants {
     public static String USER_NAME = "name";
     public static String LOGIN_CHECK = "login_check";
 
+
+
+
 }

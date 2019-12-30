@@ -510,6 +510,7 @@
             android:background="#B4B8B8"/>
 
         <Button
+            android:id="@+id/add_BTN"
             android:text="ADD HOUSEHOLD"
             android:textColor="@color/white"
             android:layout_below="@id/horiView4"

@@ -21,6 +21,9 @@ android {
         release {
             minifyEnabled false
             testCoverageEnabled = true
+
+
+
             buildConfigField "String", "API_SERVER_IP", "\"http://api.barnco99.com/\""
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -77,6 +80,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.0'
+
+
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

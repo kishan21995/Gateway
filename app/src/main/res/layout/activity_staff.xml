@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".activities.StaffActivity">
 
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -48,5 +49,6 @@
 
         </RelativeLayout>
     </LinearLayout>
+
 
 </LinearLayout>

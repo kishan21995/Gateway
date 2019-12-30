@@ -5,21 +5,21 @@ package com.app.gateway.models.login;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LoginRequest {
+public class LoginRequests {
 
-@SerializedName("username")
+@SerializedName("email")
 @Expose
-private String username;
+private String email;
 @SerializedName("password")
 @Expose
 private String password;
 
-public String getUsername() {
-return username;
+public String getEmail() {
+return email;
 }
 
-public void setUsername(String username) {
-this.username = username;
+public void setEmail(String email) {
+this.email = email;
 }
 
 public String getPassword() {

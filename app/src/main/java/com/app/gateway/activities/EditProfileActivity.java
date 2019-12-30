@@ -25,7 +25,7 @@ public class EditProfileActivity extends AppCompatActivity {
         _backIMG=findViewById(R.id.backIMG);
         _nameET=findViewById(R.id.nameET);
         _phoneET=findViewById(R.id.phoneET);
-        _emailET=findViewById(R.id.emailET);
+        _emailET=findViewById(R.id.emailET1);
         _saveBTN=findViewById(R.id.saveBTN);
 
         _backIMG.setOnClickListener(new View.OnClickListener() {

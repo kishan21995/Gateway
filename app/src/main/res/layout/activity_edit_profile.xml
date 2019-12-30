@@ -54,7 +54,7 @@
         android:layout_height="50dp"/>
 
     <EditText
-        android:id="@+id/emailET"
+        android:id="@+id/emailET1"
         android:hint="Email"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
