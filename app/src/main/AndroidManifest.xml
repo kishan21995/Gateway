@@ -167,11 +167,11 @@
         <activity
             android:name=".activities.SignupActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3" />
+            android:theme="@style/AppTheme5" />
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3" />
+            android:theme="@style/AppTheme5" />
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"

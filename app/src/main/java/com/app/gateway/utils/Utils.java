@@ -27,13 +27,13 @@ public class Utils {
 
     private static ProgressDialog pDialog;
 
-    public static void showProgressDialog(Context context, String s) {
+    public static void showProgressDialog(Context context) {
         if (pDialog != null) {
             pDialog.dismiss();
         }
         try {
             pDialog = new ProgressDialog(context);
-            pDialog.setMessage("Please wait");
+            pDialog.setMessage("Please wait....");
             pDialog.setIndeterminate(true);
             pDialog.setCancelable(false);
             pDialog.setCanceledOnTouchOutside(false);
@@ -42,8 +42,6 @@ public class Utils {
             e.printStackTrace();
         }
     }
-
-
 
 
     public static void dismissProgressDialog() {
@@ -79,11 +77,4 @@ public class Utils {
     public static void showMessage(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show();
     }
-
-
-
-
 }
-
-
-

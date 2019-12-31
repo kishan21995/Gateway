@@ -59,6 +59,16 @@
 
     </style>
 
+    <style name="AppTheme5" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#5627a1</item>
+        <item name="colorPrimaryDark">#5627a1</item>
+        <item name="colorAccent">#5627a1</item>
+
+    </style>
+
     <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="android:windowFullscreen">false</item>

@@ -12,15 +12,10 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.app.gateway.R;
-import com.app.gateway.models.login.LoginRequests;
-import com.app.gateway.models.login.LoginResponses;
-import com.app.gateway.models.signup.RegistrationRequests;
-import com.app.gateway.models.signup.RegistrationResponses;
+import com.app.gateway.models.login.LoginRequest;
+import com.app.gateway.models.login.LoginResponse;
 import com.app.gateway.retrofit.RestClient;
-import com.app.gateway.utils.Constants;
-import com.app.gateway.utils.HFMPrefs;
 import com.app.gateway.utils.Utils;
-import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,9 +23,9 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
     private Toolbar toolbar;
-    private Button _logBTN;
+    private Button _logBTN4;
     private TextView _forgatePWD;
-    private EditText _emailET,_pwdET;
+    private EditText _emailET4,_pwdET4;
 
 
 
@@ -40,16 +35,17 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        _logBTN=findViewById(R.id.logBTN1);
-        _emailET=findViewById(R.id.emailET1);
-        _pwdET=findViewById(R.id.pwdET1);
+        _logBTN4=findViewById(R.id.logBTN4);
+        _emailET4=findViewById(R.id.emailET4);
+        _pwdET4=findViewById(R.id.pwdET4);
         _forgatePWD=findViewById(R.id.forgatePWD1);
 
 
-             _logBTN.setOnClickListener(new View.OnClickListener() {
+             _logBTN4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loginUser();
+
             }
         });
 
@@ -68,45 +64,47 @@ public class LoginActivity extends AppCompatActivity {
         boolean check = true;
 
 
-        String user_email = _emailET.getText().toString().trim();
-        String user_pwd = _pwdET.getText().toString().trim();
+        String user_email = _emailET4.getText().toString().trim();
+        String user_pwd = _pwdET4.getText().toString().trim();
 
         if (user_email.isEmpty()) {
-            _emailET.setError("Field can't be empty");
+            _emailET4.setError("Field can't be empty");
             check = false;
         }
 
         if (user_pwd.isEmpty()) {
-            _pwdET.setError("Field can't be empty");
+            _pwdET4.setError("Field can't be empty");
             check = false;
         }
 
         if (check == true) {
 
-            LoginRequests loginRequests = new LoginRequests();
-            loginRequests.setEmail(user_email);
-            loginRequests.setPassword(user_pwd);
+            LoginRequest loginRequest = new LoginRequest();
+            loginRequest.setEmail(user_email);
+            loginRequest.setPassword(user_pwd);
 
 
 
             if (Utils.isInternetConnected(this)) {
-                /*Utils.showProgressDialog(this);*/
+                Utils.showProgressDialog(this);
 
-                // Utils.showProgressDialog(,"Please Wait..");
-
-                RestClient.loginUser1(loginRequests, new Callback<LoginResponses>() {
+                RestClient.loginUser(loginRequest, new Callback<LoginResponse>() {
                     @Override
-                    public void onResponse(Call<LoginResponses> call, Response<LoginResponses> response) {
+                    public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                         //Utils.dismissProgressDialog();
                         if (response.body() != null) {
-                            if (response.body()!=null ) {
-                                LoginResponses loginResponses = response.body();
-                                Toast.makeText(LoginActivity.this, "Registration Successfully", Toast.LENGTH_SHORT).show();
-                                HFMPrefs.putString(LoginActivity.this, Constants.LOGIN_DATA, new Gson().toJson(loginResponses));
+                            if (response.body().getStatus()==true) {
+                                LoginResponse loginResponse = response.body();
+                                Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                               // HFMPrefs.putString(LoginActivity.this, Constants.LOGIN_DATA, new Gson().toJson(loginResponse));
 
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+
+                                intent.putExtra("USERNAME", "gmaii");
+                                intent.putExtra("PASSWORD", "password");
+
                                 startActivity(intent);
-                                //finish();
+                                finish();
 
 
                             }
@@ -115,14 +113,14 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<LoginResponses> call, Throwable t) {
+                    public void onFailure(Call<LoginResponse> call, Throwable t) {
                         //Utils.dismissProgressDialog();
-                        Toast.makeText(LoginActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     }
                 });
             } else {
-                Utils.dismissProgressDialog();
-                Toast.makeText(LoginActivity.this, "Something Went wrong", Toast.LENGTH_SHORT).show();
+                //Utils.dismissProgressDialog();
+                Toast.makeText(LoginActivity.this, "Please Check Internet Connection", Toast.LENGTH_SHORT).show();
 
 
             }

@@ -14,10 +14,7 @@ import com.app.gateway.R;
 import com.app.gateway.models.signup.RegistrationRequests;
 import com.app.gateway.models.signup.RegistrationResponses;
 import com.app.gateway.retrofit.RestClient;
-import com.app.gateway.utils.Constants;
-import com.app.gateway.utils.HFMPrefs;
 import com.app.gateway.utils.Utils;
-import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -117,13 +114,13 @@ public class SignupActivity extends AppCompatActivity {
 
 
             if (Utils.isInternetConnected(this)) {
-                /*Utils.showProgressDialog(this);*/
-               // Utils.showProgressDialog(,"Please Wait..");
+                Utils.showProgressDialog(this);
+
 
                 RestClient.signupUser(registrationRequests, new Callback<RegistrationResponses>() {
                     @Override
                     public void onResponse(Call<RegistrationResponses> call, Response<RegistrationResponses> response) {
-                        //Utils.dismissProgressDialog();
+                        Utils.dismissProgressDialog();
                         if (response.body() != null) {
                             if (response.body().getStatus() ==true) {
                                 RegistrationResponses registrationResponses = response.body();
@@ -142,13 +139,13 @@ public class SignupActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<RegistrationResponses> call, Throwable t) {
-                        //Utils.dismissProgressDialog();
-                        Toast.makeText(SignupActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                        Utils.dismissProgressDialog();
+                        Toast.makeText(SignupActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                     }
                 });
             } else {
                 Utils.dismissProgressDialog();
-                Toast.makeText(SignupActivity.this, "Something Went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignupActivity.this, "Please Check Internet Connection", Toast.LENGTH_SHORT).show();
 
 
             }

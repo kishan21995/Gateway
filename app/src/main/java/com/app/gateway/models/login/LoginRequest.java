@@ -5,7 +5,7 @@ package com.app.gateway.models.login;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LoginRequests {
+public class LoginRequest {
 
 @SerializedName("email")
 @Expose
