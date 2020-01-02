@@ -155,7 +155,7 @@
         <activity
             android:name=".activities.EditProfileActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3" />
+            android:theme="@style/AppTheme7" />
         <activity
             android:name=".activities.SettingActivity"
             android:screenOrientation="portrait"
