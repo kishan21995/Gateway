@@ -15,7 +15,10 @@ import com.app.gateway.R;
 import com.app.gateway.models.login.LoginRequest;
 import com.app.gateway.models.login.LoginResponse;
 import com.app.gateway.retrofit.RestClient;
+import com.app.gateway.utils.Constants;
+import com.app.gateway.utils.HFMPrefs;
 import com.app.gateway.utils.Utils;
+import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,11 +31,12 @@ public class LoginActivity extends AppCompatActivity {
     private EditText _emailET4,_pwdET4;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        initView();
 
 
         _logBTN4=findViewById(R.id.logBTN4);
@@ -60,7 +64,8 @@ public class LoginActivity extends AppCompatActivity {
 
 }
 
-    private void  loginUser() {
+
+    public void  loginUser() {
         boolean check = true;
 
 
@@ -96,12 +101,14 @@ public class LoginActivity extends AppCompatActivity {
                             if (response.body().getStatus()==true) {
                                 LoginResponse loginResponse = response.body();
                                 Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                               // HFMPrefs.putString(LoginActivity.this, Constants.LOGIN_DATA, new Gson().toJson(loginResponse));
+                                HFMPrefs.putString(LoginActivity.this, Constants.LOGIN_DATA, new Gson().toJson(loginResponse));
 
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
-                                intent.putExtra("USERNAME", "gmaii");
-                                intent.putExtra("PASSWORD", "password");
+                               /* intent.putExtra("USERNAME", "gmaii");
+                                intent.putExtra("PASSWORD", "password");*/
+
+
 
                                 startActivity(intent);
                                 finish();
@@ -129,6 +136,14 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void initView() {
+        //initialView();
+        //setPagerAdapter();
+       // setPagerIndicator();
+        //setOnClickListenerLoginButton();
+       // setOnClickListenerFogatePassword();
     }
 
 }

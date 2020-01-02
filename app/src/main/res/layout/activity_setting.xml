@@ -47,9 +47,10 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="110dp">
 
             <ImageView
+                android:id="@+id/usernameIMG"
                 android:layout_width="50dp"
                 android:layout_height="41dp"
                 android:layout_gravity="center"
@@ -67,14 +68,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-            <TextView
-                android:text="Kishan Gupta  "
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/usernameTV6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Kishan Gupta  "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/editIMG"
@@ -87,6 +89,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/usernameEMAIL6"
                 android:text=" gkishan832@gmail.com  "
                 android:textSize="14dp"
                 android:layout_marginLeft="20dp"
@@ -96,7 +99,17 @@
 
 
             <TextView
-                android:text=" 6396745689  "
+                android:id="@+id/usernameMOBILE6"
+                android:text=" 9888877760  "
+                android:textSize="14dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/usernamePASSCODE6"
+                android:text=" 6396  "
                 android:textSize="14dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/black"
@@ -139,6 +152,7 @@
                     android:layout_height="30dp"/>
 
                 <TextView
+                    android:id="@+id/app"
                     android:text="App Application Setting "
                     android:textSize="16dp"
                     android:layout_toRightOf="@id/homeICON5"

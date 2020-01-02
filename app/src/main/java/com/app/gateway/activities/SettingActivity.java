@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -14,20 +16,42 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.app.gateway.R;
+import com.app.gateway.models.login.LoginResponse;
 import com.app.gateway.utils.Constants;
+import com.app.gateway.utils.HFCPrefs;
 import com.app.gateway.utils.HFMPrefs;
+import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
+
+import static com.app.gateway.utils.Constants.LOGIN_DATA;
 
 public class SettingActivity extends AppCompatActivity {
 
-    private ImageView _editIMG, _backIMG;
+
+
+    private ImageView _editIMG, _backIMG,_usernameIMG;
     private LinearLayout _linearLayoutEdit, _addFlatVillaLT,_linearlogout_signout;
     private RelativeLayout rela_share,feed;
+    private TextView _usernameTV,_usernameEMAIL,_usernameMOBILE,_usernamePASSCODE;
+
+
+    //Shared Preference
+    LoginResponse loginResponse;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+
+        _usernameTV=findViewById(R.id.usernameTV6);
+        _usernameEMAIL=findViewById(R.id.usernameEMAIL6);
+        _usernameMOBILE=findViewById(R.id.usernameMOBILE6);
+        _usernamePASSCODE=findViewById(R.id.usernamePASSCODE6);
+
+
 
         _editIMG=findViewById(R.id.editIMG);
         _backIMG=findViewById(R.id.backIMG);
@@ -40,6 +64,11 @@ public class SettingActivity extends AppCompatActivity {
 
         _addFlatVillaLT=findViewById(R.id.addflatVillaLT);
         _linearlogout_signout=findViewById(R.id.linearlogout_signout);
+
+        //settingData();
+
+       /* String data = HFMPrefs.getString(getApplicationContext(), Constants.LOGIN_DATA);
+        loginResponse = new Gson().fromJson(data, LoginResponse.class);*/
 
 
         _linearlogout_signout.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +134,74 @@ public class SettingActivity extends AppCompatActivity {
         });
 
 
+
+
+
+
+       LoginResponse loginResponse = new Gson().fromJson(HFCPrefs.getString(this,LOGIN_DATA),LoginResponse.class);
+
+        //Log.d("mdfnv", "onCreate: "+loginResponses);
+
+
+
+        if (loginResponse.getUsername()!=null ){
+            _usernameTV.setText(loginResponse.getUsername() );
+        }else {
+            _usernameTV.setText(" " );
+        }
+
+        if (loginResponse.getEmail()!=null ){
+            _usernameEMAIL.setText(loginResponse.getEmail() );
+        }else {
+            _usernameEMAIL.setText(" " );
+        }
+
+        if (loginResponse.getMobile()!=null ){
+            _usernameMOBILE.setText(loginResponse.getMobile() );
+        }else {
+            _usernameMOBILE.setText(" " );
+        }
+
+        if (loginResponse.getPasscode()!=null ){
+            _usernamePASSCODE.setText(loginResponse.getPasscode() );
+        }else {
+            _usernamePASSCODE.setText(" " );
+        }
+
+
+
+
     }
+
+   /* @Override
+    protected void onResume() {
+        super.onResume();
+        settingData();
+    }
+
+    private void settingData() {
+
+        String data = HFMPrefs.getString(getApplicationContext(), Constants.LOGIN_DATA);
+        loginResponse = new Gson().fromJson(data, LoginResponse.class);
+
+
+        if (loginResponse.getUsername() != null) {
+            _usernameTV.setText( loginResponse.getUsername() );
+        }
+
+        if (loginResponse.getEmail() != null) {
+            _usernameEMAIL.setText( loginResponse.getEmail());
+        }
+        if (loginResponse.getMobile() != null) {
+            _usernameMOBILE.setText( loginResponse.getMobile());
+        }
+        if (loginResponse.getPasscode() != null) {
+            _usernamePASSCODE.setText( loginResponse.getPasscode());
+        }
+
+    }*/
+
+
 
     private void userlogout() {
 
@@ -132,7 +228,7 @@ public class SettingActivity extends AppCompatActivity {
 /*
                 HFMPrefs.putBoolean(SettingActivity.this, Constants.LOGIN_CHECK, false);
 */
-                //startActivity(new Intent(SettingActivity.this, LoginActivity.class));
+                startActivity(new Intent(SettingActivity.this, LoginActivity.class));
                 finish();
             }
         });
