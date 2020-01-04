@@ -53,16 +53,20 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        _forgatePWD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(LoginActivity.this, ForgatePasswordActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
 
 }
+
+    private void initView() {
+        //initialView();
+        //setPagerAdapter();
+        // setPagerIndicator();
+        //setOnClickListenerLoginButton();
+         //setOnClickListenerFogatePassword();
+    }
+
+
 
 
     public void  loginUser() {
@@ -138,12 +142,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void initView() {
-        //initialView();
-        //setPagerAdapter();
-       // setPagerIndicator();
-        //setOnClickListenerLoginButton();
-       // setOnClickListenerFogatePassword();
-    }
+
 
 }

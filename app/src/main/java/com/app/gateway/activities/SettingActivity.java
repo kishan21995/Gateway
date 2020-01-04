@@ -85,7 +85,7 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(SettingActivity.this, EditProfileActivity.class);
+                Intent intent=new Intent(SettingActivity.this, EditProfileActivityOne.class);
                 startActivity(intent);
 
             }

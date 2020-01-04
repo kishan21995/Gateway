@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.gateway">
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
@@ -16,36 +20,64 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activities.ResidentsC5"  android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.EditProfileActivityOne"
             android:theme="@style/AppTheme3"></activity>
-        <activity android:name=".activities.ResidentsC4"  android:screenOrientation="portrait"
+        <activity android:name=".activities.ImagePickerActivity" />
+        <activity
+            android:name=".activities.ResidentsC5"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsC3"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsC4"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsC2"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsC3"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsC1"  android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3"/>
-        <activity android:name=".activities.ResidentsB4"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsC2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsB3"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsC1"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsB2"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsB4"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsB1"  android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3"/>
-        <activity android:name=".activities.ResidentsA4"  android:screenOrientation="portrait"
-            android:theme="@style/AppTheme3"/>
-
-        <activity android:name=".activities.ResidentsA3"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsB3"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsA2"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsB2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".activities.ResidentsA1"  android:screenOrientation="portrait"
+        <activity
+            android:name=".activities.ResidentsB1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.ResidentsA4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.ResidentsA3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.ResidentsA2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.ResidentsA1"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme3" />
         <activity
             android:name=".activities.ReviewActivity"
@@ -186,6 +218,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>
