@@ -151,7 +151,7 @@
                  android:layout_height="wrap_content"/>-->
 
             <TextView
-                android:text="9988998898 "
+                android:text="90000000000 "
                 android:textSize="16dp"
 
                 android:layout_toRightOf="@id/proIMG"

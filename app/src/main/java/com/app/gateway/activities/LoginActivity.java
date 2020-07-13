@@ -48,7 +48,9 @@ public class LoginActivity extends AppCompatActivity {
              _logBTN4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loginUser();
+                //loginUser();
+                Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -69,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    public void  loginUser() {
+    /*public void  loginUser() {
         boolean check = true;
 
 
@@ -109,8 +111,8 @@ public class LoginActivity extends AppCompatActivity {
 
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
-                               /* intent.putExtra("USERNAME", "gmaii");
-                                intent.putExtra("PASSWORD", "password");*/
+                               *//* intent.putExtra("USERNAME", "gmaii");
+                                intent.putExtra("PASSWORD", "password");*//*
 
 
 
@@ -140,7 +142,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    }
+    }*/
 
 
 
